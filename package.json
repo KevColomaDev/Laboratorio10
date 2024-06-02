@@ -1,0 +1,35 @@
+{
+  "name": "laboratorio10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "db": "json-server --watch db.json --port=4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevColomaDev/Laboratorio10.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevColomaDev/Laboratorio10/issues"
+  },
+  "homepage": "https://github.com/KevColomaDev/Laboratorio10#readme",
+  "dependencies": {
+    "express": "4.19.2",
+    "json-server": "^1.0.0-beta.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
