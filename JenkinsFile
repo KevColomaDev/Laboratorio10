@@ -1,0 +1,13 @@
+pipeline {
+  agent any
+  stage ('Build') {
+    steps {
+      sh 'docker build -t kevcolomadev/laboratorio10 .'      
+    }
+  }
+  stage ('Run') {
+    steps {
+      sh 'docker-compose up -d'
+    }
+  }
+}
