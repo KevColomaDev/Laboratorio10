@@ -3,8 +3,8 @@ import { modelHole } from '../models/models.js'
 
 export const getAllHoleController = async (req, res) => {
   try {
-    const dataTest = await modelHole.getAllTestModel()
-    res.status(200).json(dataTest)
+    const dataHole = await modelHole.getAllHole()
+    res.status(200).json(dataHole)
   } catch (error) {
     res.status(500).json({ msg: error })
   }

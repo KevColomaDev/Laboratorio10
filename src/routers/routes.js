@@ -1,7 +1,10 @@
 import { Router } from 'express'
-import { createDataTestController, getAllTestController } from '../controllers/controllers.js'
+import { createHoleController, getAllHoleController, getHoleByIdController, deleteHoleController, updateHoleController } from '../controllers/controllers.js'
 
 export const router = Router()
 
-router.get('/data', getAllTestController)
-router.post('/data', createDataTestController)
+router.get('/data', getAllHoleController)
+router.post('/data', createHoleController)
+router.get('/data/:id', getHoleByIdController)
+router.delete('/data/:id', deleteHoleController)
+router.put('/data/:id', updateHoleController)
