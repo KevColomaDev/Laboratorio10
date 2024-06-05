@@ -6,7 +6,7 @@ export const getAllTestController = async (req, res) => {
     const dataTest = await testModel.getAllTestModel()
     res.status(200).json(dataTest)
   } catch (error) {
-    res.status(500).json({ msg: `El error: ${error}` })
+    res.status(500).json({ msg: `Error: ${error}` })
   }
 }
 
