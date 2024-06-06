@@ -10,7 +10,10 @@ export const client = new MongoClient(uri, {
     strict: true,
     deprecationErrors: true
   },
-  tls: true
+  tls: true,
+  ssl: true,
+  tlsAllowInvalidCertificates: true,
+  tlsCAFile: 'ca.pem'
 })
 
 export const connect = async () => {
