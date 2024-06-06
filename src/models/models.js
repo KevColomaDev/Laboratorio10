@@ -38,6 +38,6 @@ export const modelHole = {
     const collection = client.db('Laboratorio10').collection('Holes')
     id = new ObjectId(id)
     const peticion = await collection.findOne({ _id: id })
-    return peticion
+    return peticion || null
   }
 }
