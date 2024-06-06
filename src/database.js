@@ -9,7 +9,8 @@ export const client = new MongoClient(uri, {
     version: '1',
     strict: true,
     deprecationErrors: true
-  }
+  },
+  tls: true
 })
 
 export const connect = async () => {
