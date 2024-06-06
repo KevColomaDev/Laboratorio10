@@ -1,35 +1,43 @@
+import { client, connect } from '../database.js'
+import { ObjectId } from 'mongodb'
 export const modelHole = {
   async getAllHole () {
-    const peticion = await fetch('http://localhost:4000/test')
-    return peticion.json()
+    await connect()
+    const collection = client.db('Laboratorio10').collection('Holes')
+    const peticion = await collection.find({}).toArray()
+    return peticion
   },
+
   async createHole (newData) {
-    const url = 'http://localhost:4000/test'
-    const peticion = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(newData),
-      headers: { 'Content-type': 'application/json' }
-    })
-    return peticion.json()
+    await connect()
+    const collection = client.db('Laboratorio10').collection('Holes')
+    const peticion = await collection.insertOne(newData)
+    const result = await collection.findOne({ _id: peticion.insertedId })
+    return { peticion, result }
   },
-  async getHoleById (id) {
-    const peticion = await fetch(`http://localhost:4000/test/${id}`)
-    return peticion.json()
-  },
+
   async deleteHole (id) {
-    const url = `http://localhost:4000/test/${id}`
-    const peticion = await fetch(url, {
-      method: 'DELETE'
-    })
-    return peticion.json()
+    await connect()
+    const collection = client.db('Laboratorio10').collection('Holes')
+    id = new ObjectId(id)
+    const peticion = await collection.deleteOne({ _id: id })
+    return peticion
   },
+
   async updateHole (id, newData) {
-    const url = `http://localhost:4000/test/${id}`
-    const peticion = await fetch(url, {
-      method: 'PUT',
-      body: JSON.stringify(newData),
-      headers: { 'Content-type': 'application/json' }
-    })
-    return peticion.json()
+    await connect()
+    const collection = client.db('Laboratorio10').collection('Holes')
+    id = new ObjectId(id)
+    const peticion = await collection.updateOne({ _id: id }, { $set: newData })
+    const result = await collection.findOne({ _id: id })
+    return { peticion, result }
+  },
+
+  async getHoleById (id) {
+    await connect()
+    const collection = client.db('Laboratorio10').collection('Holes')
+    id = new ObjectId(id)
+    const peticion = await collection.findOne({ _id: id })
+    return peticion
   }
 }

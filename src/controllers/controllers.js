@@ -1,4 +1,3 @@
-import { v4 } from 'uuid'
 import { modelHole } from '../models/models.js'
 
 export const getAllHoleController = async (req, res) => {
@@ -13,7 +12,6 @@ export const getAllHoleController = async (req, res) => {
 export const createHoleController = async (req, res) => {
   try {
     const newDataHole = {
-      id: v4(),
       ...req.body
     }
     const result = await modelHole.createHole(newDataHole)
