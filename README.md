@@ -143,8 +143,9 @@ Monitoriza el rendimiento de tu aplicación utilizando herramientas como New Rel
 ![image](https://github.com/KevColomaDev/Laboratorio10/assets/150806786/32bf1805-3fd7-4145-82af-79069863f382)
 
 
+![image](https://github.com/CarlosAUD/Laboratorio10/assets/150806786/31cda7e4-d420-4004-8d56-c53586829ba4)
+
 
 ![image](https://github.com/CarlosAUD/Laboratorio10/assets/150806786/db84a86e-08a1-4e1f-b2d7-bbd107293ae2)
 
-![image](https://github.com/CarlosAUD/Laboratorio10/assets/150806786/31cda7e4-d420-4004-8d56-c53586829ba4)
 
