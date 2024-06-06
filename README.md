@@ -1,4 +1,6 @@
-![image](https://github.com/KevColomaDev/Laboratorio10/assets/150806786/1409613a-b52f-46a3-8ca1-77b3a36ec100)
+![image](https://github.com/CarlosAUD/Laboratorio10/assets/150806786/f4c00abc-970c-4047-8491-0b3f5d253e1e)
+
+𝙇𝘼𝘽𝙊𝙍𝘼𝙏𝙊𝙍𝙄𝙊 10
 
 Aqui analizaremos en detalle las APIs RESTful y sus conceptos fundamentales, incluyendo HTTP, API, REST, JSON, cliente y servidor. Además, abordaremos los beneficios de utilizar este tipo de APIs en el desarrollo de software, tales como la estandarización, simplicidad, escalabilidad y estado sin estado. A medida que avancemos, profundizaremos en cada uno de estos aspectos para proporcionar una comprensión sólida de cómo las APIs RESTful pueden optimizar la comunicación entre sistemas y facilitar la integración de servicios en aplicaciones complejas.
 
@@ -141,3 +143,6 @@ Monitoriza el rendimiento de tu aplicación utilizando herramientas como New Rel
 
 ![image](https://github.com/KevColomaDev/Laboratorio10/assets/150806786/32bf1805-3fd7-4145-82af-79069863f382)
 
+
+
+![image](https://github.com/CarlosAUD/Laboratorio10/assets/150806786/db84a86e-08a1-4e1f-b2d7-bbd107293ae2)
